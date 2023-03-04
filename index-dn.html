@@ -1,58 +1,177 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <link rel="stylesheet" href="Style.css" />
         <title>Apple Tree House</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="Style.css" />
     </head>
-    <div class="language-switch">
-        <a href="index.html" lang="pl"
-            ><span style="font-size: 2.2em">🇵🇱</span></a
-        >
-        <a href="index-en.html" lang="en"
-            ><span style="font-size: 2.2em">🇬🇧</span></a
-        >
-        <a href="index-dn.html" lang="en"
-            ><span style="font-size: 2.2em">🇩🇪</span></a
-        >
-    </div>
     <body>
-        <h1>
-            <a class="test">
-                <b>Apple Tree House</b>
-            </a>
-        </h1>
-        <ul>
-            <li class="thumbnail2"><a href="index-dn.html">Home</a></li>
-            <li class="thumbnail2"><a href="photos-dn.html">Galerie</a></li>
-            <li class="thumbnail2"><a href="drive-dn.html">Standort</a></li>
-            <li class="thumbnail2"><a href="contact-dn.html">Kontakt</a></li>
-        </ul>
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button
+                    type="button"
+                    data-bs-target="#demo"
+                    data-bs-slide-to="0"
+                    class="active"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#demo"
+                    data-bs-slide-to="1"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#demo"
+                    data-bs-slide-to="2"
+                ></button>
+            </div>
 
-        <p class="description">
-            So war es. Früher stand da ein altes, postdeutsches Haus mit Garten,
-            wo wir früher jeden Urlaub für unsere Kinder verbrachten. In den
-            90er Jahren gelang es den Eltern, es zurückzukaufen und wunderschön
-            zu dekorieren. Nach 30 Jahren bedurfte es jedoch einer
-            Generalsanierung. Also haben wir uns einen Winter lang darin
-            eingeschlossen und tatsächlich neu geschaffen, alles selbst gemacht.
-            <br />
-            <br />
+            <div class="carousel-inner">
+                <div class="carousel-item active c-item">
+                    <img
+                        src="Sypialnia/1.jpg"
+                        alt="Sypialnia"
+                        class="d-block w-100 c-img"
+                        style="width: 100%"
+                    />
+                    <div class="carousel-caption">
+                        <h3 class="color">Wygoda</h3>
+                        <p class="color">Wspaniałe miesjce na odpoczynek</p>
+                    </div>
+                </div>
+                <div class="carousel-item c-item">
+                    <img
+                        src="Natura/natura1.jpg"
+                        alt="Natura"
+                        class="d-block w-100 c-img"
+                        style="width: 100%"
+                    />
+                    <div class="carousel-caption">
+                        <h3 class="color">Natura</h3>
+                        <p class="color">
+                            Miejsce na spędzenie czasu na łonie natury
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item c-item">
+                    <img
+                        src="Natura/natura7.jpg"
+                        alt="Rower"
+                        class="d-block w-100 c-img"
+                        style="width: 100%"
+                    />
+                    <div class="carousel-caption">
+                        <h3 class="color">Przygoda</h3>
+                        <p class="color">Wiele niesamowitych tras rowerowych</p>
+                    </div>
+                </div>
+            </div>
 
-            Der Nachbar hier ist der Nationalpark Wolin, und die häufigsten
-            Gäste sind Rehe, die durch die Fenster gucken. Mit etwas Glück
-            entdecken Sie auf unseren Eichen einen majestätischen Seeadler. Es
-            gibt auch alte Wälder, die höchsten Klippen und ... Wikinger. Und
-            obwohl wir über 600 km von der Insel entfernt sind, haben wir
-            unseren eigenen Stop Alaska – mit dem schönsten und wildesten Teil
-            des polnischen Meeres. <br />
-            <br />
-
-            Lohnt es sich nicht, es mit eigenen Augen zu sehen?
-        </p>
-
-        <div class="photo-container">
-            <img class="center" src="Natura/natura2.jpg" alt="Zdjęcie natury" />
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide="prev"
+            >
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide="next"
+            >
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        <nav class="navbar navbar-expand-sm bg-light">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"
+                            >Apple Tree House</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Bedroom.html"
+                            >Galeria Zdjęć</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Dojazd.html">Dojazd</a>
+                    </li>
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="index.html"
+                            style="font-size: 2.2em; text-decoration: none"
+                            >🇵🇱</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="index-en.html"
+                            style="font-size: 2.2em; text-decoration: none"
+                            >🇬🇧</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            href="index-dn.html"
+                            style="font-size: 2.2em; text-decoration: none"
+                            >🇩🇪</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>Kilka słów o Lubinie</h3>
+                    <p>
+                        O Lubinie, czyli miejscowości, w której Cię ugościmy,
+                        pisano już w XII wieku. Jeszcze wcześniej sporą rolę
+                        odgrywała tu kultura łużycka. Gdyby jednak tak naprawdę
+                        chcieć przenieść się do czasów, które wywarły na to
+                        miejsce największy wpływ, to czas założyć grube kurtki i
+                        wełniane skarpetki: następny przystanek w epoce
+                        lodowcowej. To właśnie wtedy narodziła się wyspa Wolin,
+                        jaką znamy dzisiaj: pełna jezior, wzgórz, dzikich plaż,
+                        a także najwyższych klifów w Polsce. <br /><br />
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Column 2</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit...
+                    </p>
+                    <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris...
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Column 3</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit...
+                    </p>
+                    <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris...
+                    </p>
+                </div>
+            </div>
         </div>
     </body>
 </html>
